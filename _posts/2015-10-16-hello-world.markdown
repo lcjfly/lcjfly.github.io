@@ -15,7 +15,7 @@ header-img: "img/post-bg-01.jpg"
 
 <p>
 	<h2>Why GitHub and Jeklly</h2>
-	This is my blog which powered by Jeklly and hosted by GitHub. There are so many ways to build a blog site. Why I choose GitHub+Jeklly? Because with GitHub and Jeklly, you can easily add a post like pushing an update in Git. And also GitHub can be vistied with less latency almost all around the world. Last but not the least, GitHub provide me a free domain lcjfly.github.io !
+	This is my blog which powered by Jeklly and hosted by GitHub. There are so many ways to build a blog site like WordPress, Hexo, Ghost or even owning a VPS. Why I choose GitHub+Jeklly? Because with GitHub and Jeklly, you can easily add a post like pushing an update in Git. And also GitHub can be vistied with less latency almost all around the world. Last but not the least, GitHub provide me a free domain lcjfly.github.io !
 </p>
 
 <p>
