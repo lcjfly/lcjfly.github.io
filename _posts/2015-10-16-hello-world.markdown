@@ -5,6 +5,7 @@ subtitle:   "first post"
 date:       2015-10-16 14:00:00
 author:     "luchenjie"
 header-img: "img/post-bg-01.jpg"
+comments: true
 ---
 
 
