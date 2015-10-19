@@ -29,7 +29,7 @@ layout: default
 
                 <hr>
                 
-                <div class="ds-share flat" data-thread-key="{{ post.url }}" data-title="{{ page.title }}" data-images="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" data-content="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}">
+                <div class="ds-share flat" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-images="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" data-content="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl }}">
 		    <div class="ds-share-inline">
 		      <ul  class="ds-share-icons-16">
 		      	
@@ -45,7 +45,7 @@ layout: default
                 
                 
                 <!-- 多说评论框 start -->
-		<div class="ds-thread" data-thread-key="{{ post.url }}" data-title="{{ page.title }}" data-url="{{ post.url | prepend: site.baseurl }}"></div>
+		<div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl }}"></div>
 		<!-- 多说评论框 end -->
 		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 		<script type="text/javascript">
