@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Node Cluster Demo"
+title:      "NodeJS Cluster"
 subtitle:   "make NodeJS support multi-CPUs"
 date:       2015-11-02 20:23:00
 author:     "luchenjie"
