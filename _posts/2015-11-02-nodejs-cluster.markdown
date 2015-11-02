@@ -55,3 +55,4 @@ if (cluster.isMaster) {
 <h2>Apache Benchmark test</h2>
 <img src="{{ "/img/nodejs-cluster-img-3.jpg" | prepend: site.baseurl }}">
 
+NodeJS Cluster API: <a href="https://nodejs.org/api/cluster.html#cluster_cluster">https://nodejs.org/api/cluster.html#cluster_cluster</a>
