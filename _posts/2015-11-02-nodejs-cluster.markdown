@@ -7,6 +7,7 @@ author:     "luchenjie"
 header-img: "img/post-bg-04.jpg"
 ---
 
+<h2>talk is cheap, show me the code.</h2>
 <pre class="prettyprint linenums">
 var cluster = require('cluster');
 var http = require('http');
@@ -20,8 +21,7 @@ if (cluster.isMaster) {
 	cluster.on('online', function(worker) {
 		console.log('Worker '+worker.process.pid+' is online');
 		setTimeout(function() {
-			if(worker.process.pid %2 ===0)
-				worker.send('hello from the master '+worker.process.pid);
+			worker.send('hello from the master '+worker.process.pid);
 		}, 3000);
 		worker.on('message', function(message) {
 			console.log('worker on message:'+message);
@@ -34,18 +34,24 @@ if (cluster.isMaster) {
 		cluster.fork();
 	});
 } else {
-	var msg = 'default';
 	http.createServer(function(req, res) {
 		res.writeHead(200);
-		res.end('process '+process.pid+' say hello:'+msg);
+		res.end('process '+process.pid+' say hello');
 	}).listen(8000);
 
 	process.on('message', function(message) {
 		console.log('process on message:'+message);
 		msg = message;
 	});
-
-	process.send('hello from '+process.pid);
 }
 </pre>
+
+<h2>start node cluster server</h2>
+<img src="{{ "/img/nodejs-cluster-img-1.jpg" | prepend: site.baseurl }}">
+
+<h2>CURL test</h2>
+<img src="{{ "/img/nodejs-cluster-img-2.jpg" | prepend: site.baseurl }}">
+
+<h2>Apache Benchmark test</h2>
+<img src="{{ "/img/nodejs-cluster-img-3.jpg" | prepend: site.baseurl }}">
 
